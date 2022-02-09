@@ -8,6 +8,7 @@ spring:
   h2:
     console:
       enabled: true
+  
   datasource:
     url: jdbc:h2:mem:userBD;
     driver-class-name: org.h2.Driver
@@ -22,6 +23,10 @@ spring:
     endpoints:
       health:
        show-details: always
+  boot:
+    admin:
+      client:
+        url: http://localhost:9020
 eureka:
   client:
     serviceUrl:
