@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 9011
 eureka:
   client:
     serviceUrl:
@@ -14,5 +14,5 @@ spring:
         - id: service-user
           uri: lb://service-user
           predicates:
-            - Path=/users/**
+            - Path=/poli/v1/users/**
      
